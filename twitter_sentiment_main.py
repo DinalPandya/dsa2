@@ -1,3 +1,5 @@
+
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -63,4 +65,4 @@ model.fit(X_train_pad, y_train_onehot, epochs=5, batch_size=32, validation_data=
 
 # Save the trained model
 model.save('sentiment_model.h5')
-dump(tokenizer, 'tokenizer.joblib')
+dump(tokenizer, 'tokenizer-1.joblib')
