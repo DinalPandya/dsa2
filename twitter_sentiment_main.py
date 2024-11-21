@@ -49,7 +49,7 @@ y_test_onehot = tf.keras.utils.to_categorical(y_test_encoded, num_classes=num_cl
 
 # Build a simple LSTM model with 3 output units
 model = tf.keras.Sequential([
-    Embedding(input_dim=5000, output_dim=100, input_length=100),
+    Embedding(input_dim=5000, output_dim=3, input_length=100),
     LSTM(128),
     Dense(64, activation='relu'),
     Dropout(0.5),
